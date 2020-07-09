@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Todo List</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="text-center text-light my-4">
+      <h1 class="mb-4">Todo List</h1>
+      <form class="search">
+        <input class="form-control m-auto" type="text" name="search" placeholder="search todos" />
+      </form>
+    </header>
+
+
+
+
+    <ul class="list-group todos mx-auto text-light">
+
+    </ul>
+
+
+    <form class="add text-center my-4">
+      <label class="text-light">Add a new todo...</label>
+      <input class="form-control m-auto" type="text" name="add" />
+    </form>
+
+  </div>
+
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDkhNey3SeKSxg_B-YeKXyEHfFu86GwQqA",
+      authDomain: "todolist-norris.firebaseapp.com",
+      databaseURL: "https://todolist-norris.firebaseio.com",
+      projectId: "todolist-norris",
+      storageBucket: "todolist-norris.appspot.com",
+      messagingSenderId: "148348343259",
+      appId: "1:148348343259:web:bd22da4632bfe6fb0d4dfe",
+      measurementId: "G-82LR90BD2T"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+  </script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
