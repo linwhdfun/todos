@@ -18,6 +18,8 @@ const addTodo = (tododata, id) => {
     `;
 
     ul.innerHTML += html
+    
+    inputform.reset();
 };
 
 
