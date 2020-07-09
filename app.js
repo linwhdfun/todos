@@ -17,9 +17,7 @@ const addTodo = (tododata, id) => {
         </li>
     `;
 
-    ul.innerHTML += html;
-    
-    inputform.add.reset();
+    ul.innerHTML += html;   
 };
 
 
@@ -71,6 +69,8 @@ inputform.addEventListener("submit", e => {
     }).catch(err => {
         console.log(err);
     });
+    
+    inputform.reset();
 });
 
 
