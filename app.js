@@ -17,9 +17,9 @@ const addTodo = (tododata, id) => {
         </li>
     `;
 
-    ul.innerHTML += html
+    ul.innerHTML += html;
     
-    inputform.reset();
+    inputform.add.reset();
 };
 
 
